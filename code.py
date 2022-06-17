@@ -24,7 +24,6 @@ cursor = connect.cursor()
 cursor.execute('''Select * from runs ORDER BY points DESC''')
 connect.commit()
 ftchall=cursor.fetchall()
-print(ftchall)
 
 window_1 = pygame.display.set_mode((700,700))
 bg = (250,250,250)   
